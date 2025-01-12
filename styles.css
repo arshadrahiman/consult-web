@@ -304,5 +304,134 @@ footer .signature {
 }
 
 footer .signature strong {
-    color: #00b4d8; /* Accent color for your name */
+    color: #00b4d8;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    /* Header - Mobile */
+    header .logo h1 {
+        font-size: 2em;
+        margin-left: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    /* Hero Section */
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero h2 {
+        font-size: 2.8em;
+    }
+
+    .hero p {
+        font-size: 1.3em;
+    }
+
+    .cta-button {
+        padding: 15px 25px;
+        font-size: 1.1em;
+    }
+
+    /* About Section */
+    #about h2 {
+        font-size: 2.4em;
+    }
+
+    #about p {
+        font-size: 1.2em;
+    }
+
+    /* Services Section */
+    #services h2 {
+        font-size: 2.4em;
+    }
+
+    .service-item {
+        padding: 20px;
+        margin: 15px 0;
+    }
+
+    .service-item h3 {
+        font-size: 1.8em;
+    }
+
+    .service-item p {
+        font-size: 1.1em;
+    }
+
+    /* Testimonial Section */
+    #testimonials h2 {
+        font-size: 2.4em;
+    }
+
+    .testimonial-slide p {
+        font-size: 1.2em;
+    }
+
+    /* Team Section */
+    #team h2 {
+        font-size: 2.4em;
+    }
+
+    .team-cards {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .team-card {
+        width: 90%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .team-avatar img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .team-card h3 {
+        font-size: 1.5em;
+    }
+
+    .team-card p {
+        font-size: 1.1em;
+    }
+
+    /* Contact Section */
+    #contact h2 {
+        font-size: 2.4em;
+    }
+
+    #contact input,
+    #contact textarea {
+        padding: 15px;
+    }
+
+    #contact button {
+        padding: 15px;
+        font-size: 1.2em;
+    }
+
+    /* Footer */
+    footer .social-links a {
+        font-size: 1.1em;
+    }
+
+    footer p {
+        font-size: 1em;
+    }
+
+    footer .signature {
+        font-size: 0.9em;
+    }
 }
