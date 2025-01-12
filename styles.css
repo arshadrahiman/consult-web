@@ -1,1 +1,309 @@
 
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header */
+header {
+    background-color: #0077b6;
+    color: white;
+    padding: 20px 0;
+}
+
+header .logo h1 {
+    margin-left: 30px;
+    font-size: 2.5em;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin-right: 30px;
+}
+
+nav ul li a {
+    font-size: 1.2em;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+nav ul li a:hover {
+    color: #00b4d8;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #00b4d8, #00b894);
+    color: white;
+    text-align: center;
+    padding: 120px 0;
+}
+
+.hero h2 {
+    font-size: 4em;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #0077b6;
+    padding: 18px 30px;
+    font-size: 1.3em;
+    color: white;
+    border-radius: 50px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #00b4d8;
+    transform: scale(1.05);
+}
+
+/* About Section */
+#about {
+    background-color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2.8em;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+#about p {
+    font-size: 1.3em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Services Section */
+#services {
+    padding: 80px 0;
+    background-color: #f4f7f6;
+    text-align: center;
+}
+
+#services h2 {
+    font-size: 2.8em;
+    margin-bottom: 40px;
+}
+
+.service-item {
+    background-color: white;
+    padding: 30px;
+    margin: 20px 0;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.service-item:hover {
+    transform: scale(1.05);
+}
+
+.service-item h3 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.service-item p {
+    font-size: 1.2em;
+}
+
+/* Testimonials Section (Slider) */
+#testimonials {
+    background-color: #ffffff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+#testimonials h2 {
+    font-size: 2.8em;
+    margin-bottom: 40px;
+}
+
+.testimonial-slider {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.testimonial-slide {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 20px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.testimonial-slide p {
+    font-size: 1.4em;
+    font-style: italic;
+    color: #555;
+}
+
+.testimonial-slider .active {
+    opacity: 1;
+}
+
+/* Team Section */
+#team {
+    background-color: #ffffff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+#team h2 {
+    font-size: 2.8em;
+    margin-bottom: 40px;
+}
+
+.team-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.team-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.team-card:hover {
+    transform: scale(1.05);
+}
+
+.team-avatar {
+    margin-bottom: 20px;
+}
+
+.team-avatar img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #0077b6;
+}
+
+.team-card h3 {
+    font-size: 1.8em;
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+.team-card p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #ffffff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.8em;
+    margin-bottom: 40px;
+}
+
+#contact form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact input,
+#contact textarea {
+    padding: 18px;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    background-color: #f9f9f9;
+}
+
+#contact button {
+    padding: 18px;
+    font-size: 1.3em;
+    background-color: #0077b6;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#contact button:hover {
+    background-color: #00b4d8;
+}
+
+/* Footer Section */
+footer {
+    background-color: #0077b6;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+footer .social-links {
+    margin-bottom: 20px;
+}
+
+footer .social-links a {
+    margin: 0 20px;
+    color: white;
+    font-size: 1.3em;
+    text-transform: uppercase;
+}
+
+footer p {
+    font-size: 1.1em;
+}
+
+footer .signature {
+    font-size: 1.0em;
+    color: #f4f4f4;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+footer .signature strong {
+    color: #00b4d8; /* Accent color for your name */
+}
