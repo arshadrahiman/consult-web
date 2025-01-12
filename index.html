@@ -1,1232 +1,148 @@
 <!DOCTYPE html>
-<!-- This site was created in Webflow. https://webflow.com -->
-<!-- Last Published: Thu Sep 22 2022 15:36:28 GMT+0000 (Coordinated Universal Time) -->
-<html data-wf-domain="empathy-path-eleven.webflow.io" data-wf-page="611030f94f960b02ff9ea3b1" data-wf-site="611030f94f960b2e229ea3b0">
+<html lang="en">
+
 <head>
-    <meta charset="utf-8"/>
-    <title>Home |Template</title>
-    <meta content="width=device-width, initial-scale=1" name="viewport"/>
-    <meta content="Webflow" name="generator"/>
-    <link href="https://assets.website-files.com/611030f94f960b2e229ea3b0/css/empathy-path-eleven.webflow.e8d69a4c7.css" rel="stylesheet" type="text/css"/>
-    <style>
-    @media (min-width: 992px) {
-        html.w-mod-js\: not\(.w-mod-ix\) [data-w-id="5ccf5cf6-ce94-edd9-8f43-c3d71e3f2ba8"] {
-            display: none;
-            -webkit-transform: translate3d(0, 0, 0) scale3d(0.3, 0.3, 1) rotateX(0) rotateY(0) rotateZ(0) skew(-20deg, -20deg);
-            -moz-transform: translate3d(0, 0, 0) scale3d(0.3, 0.3, 1) rotateX(0) rotateY(0) rotateZ(0) skew(-20deg, -20deg);
-            -ms-transform: translate3d(0, 0, 0) scale3d(0.3, 0.3, 1) rotateX(0) rotateY(0) rotateZ(0) skew(-20deg, -20deg);
-            transform: translate3d(0, 0, 0) scale3d(0.3, 0.3, 1) rotateX(0) rotateY(0) rotateZ(0) skew(-20deg, -20deg);
-            opacity: 0;
-        }
-    }
-    </style>
-    <link href="https://fonts.googleapis.com" rel="preconnect"/>
-    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
-    <script type="text/javascript">
-    WebFont.load({
-        google: {
-            families: ["Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic", "Krona One:regular", "Syne:regular,500,600,700,800"]
-        }
-    });
-    </script>
-    <script type="text/javascript">
-    !function(o, c) {
-        var n = c.documentElement,
-            t = " w-mod-";
-        n.className += t + "js",
-        ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch")
-    }(window, document);
-    </script>
-    <link href="https://cdn.prod.website-files.com/img/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
-    <link href="https://cdn.prod.website-files.com/img/webclip.png" rel="apple-touch-icon"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reminder Counselling</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
 </head>
-<body class="body">
-    <div class="preloader">
-        <div class="grain-wrapper">
-            <div class="grain in-element"></div>
-        </div>
-        <div class="preloader-content">
-            <div class="subtitle">Loading</div>
-            <div class="preloader-outline-circle">
-                <div id="w-node-_74cc01b5-0937-d3a4-c5e1-1b59c8b714d3-c8b714cc" class="preloader-outline-wrapper top">
-                    <div class="preloader-outline"></div>
-                </div>
-                <div id="w-node-_74cc01b5-0937-d3a4-c5e1-1b59c8b714d5-c8b714cc" class="preloader-outline-wrapper bottom">
-                    <div class="preloader-outline bottom"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div data-collapse="none" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
-        <div data-w-id="8dc0a957-728d-f9c4-ca0d-2987c0d37288" class="full-screen-menu">
-            <div class="grain in-element"></div>
-            <div class="menu-content">
-                <div id="w-node-fc881fd5-67a7-613d-9e4f-502f79f3247a-21b10d4f" data-w-id="fc881fd5-67a7-613d-9e4f-502f79f3247a" class="menu-items">
-                    <div data-w-id="9032598b-e734-2bd8-7e64-0736ff039a1a" class="menu-wrapper">
-                        <a id="out" href="/" aria-current="page" class="menu-link w-inline-block w--current">
-                            <div class="title">
-                                <div>Home</div>
-                            </div>
-                        </a>
-                        <a id="out" href="/services" class="menu-link w-inline-block">
-                            <div class="title">
-                                <div>Services</div>
-                            </div>
-                        </a>
-                        <a id="out" href="/about" class="menu-link w-inline-block">
-                            <div class="title">
-                                <div>About</div>
-                            </div>
-                        </a>
-                        <a id="out" href="/projects" class="menu-link w-inline-block">
-                            <div class="title">
-                                <div>Projects</div>
-                            </div>
-                        </a>
-                        <a id="out" href="/news" class="menu-link w-inline-block">
-                            <div id="w-node-_3f65b3d7-15f7-14cb-e0e5-9b7c40221ca3-21b10d4f" class="title">
-                                <div>News</div>
-                            </div>
-                        </a>
-                        <a id="out" href="/contact" class="menu-link w-node-d6eaa62a-c375-7ed9-28ed-7d9126981c64-21b10d4f w-inline-block">
-                            <div class="title">
-                                <div>Contact</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="menu-center">
-                    <div class="menu-pin"></div>
-                </div>
-            </div>
-        </div>
-        <div class="grid-wrapper zero-height">
-            <div id="w-node-_57398322-eccc-1d76-2424-c47721b10d51-21b10d4f" class="navbar-wrapper">
-                <div data-w-id="57398322-eccc-1d76-2424-c47721b10d52" class="grain-wrapper">
-                    <div class="grain in-nav"></div>
-                </div>
-                <a href="#" class="reel-link w-inline-block w-lightbox">
-                    <div id="w-node-_57398322-eccc-1d76-2424-c47721b10d55-21b10d4f" class="dot"></div>
-                    <div class="nav-text">Our reel</div>
-                    <script type="application/json" class="w-json">{
-                      "items": [
-                        {
-                          "url": "https://www.youtube.com/watch?v=NpEaa2P7qZI",
-                          "originalUrl": "https://www.youtube.com/watch?v=NpEaa2P7qZI",
-                          "width": 940,
-                          "height": 528,
-                          "thumbnailUrl": "https://i.ytimg.com/vi/NpEaa2P7qZI/hqdefault.jpg",
-                          "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FNpEaa2P7qZI%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DNpEaa2P7qZI&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FNpEaa2P7qZI%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"940\" height=\"528\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
-                          "type": "video"
-                        }
-                      ],
-                      "group": ""
-                    }</script>
-                </a>
-                <a href="/" id="w-node-_57398322-eccc-1d76-2424-c47721b10d58-21b10d4f" aria-current="page" class="brand w-nav-brand w--current">
-                    <div>Empathy</div>
-                </a>
-                <nav role="navigation" class="nav-menu w-nav-menu">
-                    <a href="#" class="nav-link w-nav-link">Home</a>
-                </nav>
-                <div class="w-nav-button">
-                    <div class="w-icon-nav-menu"></div>
-                </div>
-                <div id="w-node-_57398322-eccc-1d76-2424-c47721b10d63-21b10d4f" class="nav-right">
-                    <div class="page-title">
-                        <div class="nav-text">Home</div>
-                    </div>
-                    <div class="light-separator dot"></div>
-                    <div data-w-id="57398322-eccc-1d76-2424-c47721b10d68" class="menu-button">
-                        <div data-is-ix2-target="1" class="lottie-animation" data-w-id="57398322-eccc-1d76-2424-c47721b10d69" data-animation-type="lottie" data-src="https://cdn.prod.website-files.com/611030f94f960b2e229ea3b0/611154a2ed9cf0469bf51a60_Menu-nav.json" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="2.875" data-duration="0" data-ix2-initial-state="0"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div data-w-id="bfb64953-a8c7-b1be-c434-d9bb6734d092" class="home-hero">
-        <div class="hero-image">
-            <div class="hero-background home-background">
-                <div class="overlay"></div>
-            </div>
-        </div>
-        <div class="hero-wrapper">
-            <div id="w-node-_2a8ca09f-4f9b-09e5-fdff-74b5da8da592-ff9ea3b1" class="hero-content">
-                <div id="w-node-_8a8b0b16-81c6-9194-e04b-2e6630cd3864-ff9ea3b1" class="rotating-text-wrapper top-text">
-                    <div class="rotate-text-wrapper top-text">
-                        <h1 class="rotate-heading">Apple Box</h1>
-                        <div id="w-node-_36c1fa0b-81ea-f87d-ba14-aa8c21de7156-fd813ec8" class="dot large solid"></div>
-                        <h1 class="rotate-heading">Apple Box</h1>
-                        <div id="w-node-_50e99ecd-60a3-ad22-36ea-263a4ea4c43a-fd813ec8" class="dot large solid"></div>
-                        <h1 class="rotate-heading">Apple Box</h1>
-                        <div id="w-node-_70ef2986-807b-ce5f-7a5e-3fd3fc8bb3ca-fd813ec8" class="dot large solid"></div>
-                        <h1 class="rotate-heading">Apple Box</h1>
-                    </div>
-                    <div class="rotate-text-wrapper top-text">
-                        <h1 class="rotate-heading">Apple Box</h1>
-                        <div id="w-node-_36c1fa0b-81ea-f87d-ba14-aa8c21de7156-fd813ec8" class="dot large solid"></div>
-                        <h1 class="rotate-heading">Apple Box</h1>
-                        <div id="w-node-_50e99ecd-60a3-ad22-36ea-263a4ea4c43a-fd813ec8" class="dot large solid"></div>
-                        <h1 class="rotate-heading">Apple Box</h1>
-                        <div id="w-node-_70ef2986-807b-ce5f-7a5e-3fd3fc8bb3ca-fd813ec8" class="dot large solid"></div>
-                        <h1 class="rotate-heading">Apple Box</h1>
-                    </div>
-                </div>
-                <div id="w-node-ac52f625-95fd-a3ca-54b0-92197cb53a2d-ff9ea3b1" class="rotating-text-wrapper bottom-text">
-                    <div id="out" class="rotate-text-wrapper bottom-text">
-                        <h1 class="rotate-heading">Based in Saudi Arabia</h1>
-                        <div id="w-node-a3bf2e12-387f-9408-fc19-c35bd26e3d27-ef7244d9" class="dot large"></div>
-                        <h1 class="rotate-heading">Based in Saudi Arabia</h1>
-                        <div id="w-node-_844a7c99-96fc-6ab0-1c5a-4534068a4357-ef7244d9" class="dot large"></div>
-                        <h1 class="rotate-heading">Based in Saudi Arabia</h1>
-                        <div id="w-node-_1d95eafb-e2b5-55bf-db4c-7ebbff76c137-ef7244d9" class="dot large"></div>
-                        <h1 class="rotate-heading">Based in Saudi Arabia</h1>
-                        <div id="w-node-f386b94a-e8a9-410b-cf26-3aca4fc473e3-ef7244d9" class="dot large"></div>
-                    </div>
-                    <div id="out" class="rotate-text-wrapper bottom-text">
-                        <h1 class="rotate-heading">Based in Saudi Arabia</h1>
-                        <div id="w-node-a3bf2e12-387f-9408-fc19-c35bd26e3d27-ef7244d9" class="dot large"></div>
-                        <h1 class="rotate-heading">Based in Saudi Arabia</h1>
-                        <div id="w-node-_844a7c99-96fc-6ab0-1c5a-4534068a4357-ef7244d9" class="dot large"></div>
-                        <h1 class="rotate-heading">Based in Saudi Arabia</h1>
-                        <div id="w-node-_1d95eafb-e2b5-55bf-db4c-7ebbff76c137-ef7244d9" class="dot large"></div>
-                        <h1 class="rotate-heading">Based in Saudi Arabia</h1>
-                        <div id="w-node-f386b94a-e8a9-410b-cf26-3aca4fc473e3-ef7244d9" class="dot large"></div>
-                    </div>
-                </div>
-            </div>
-            <a href="#scroll" data-w-id="47d7efc7-af2d-94b6-4c5e-6ced314f79f0" class="scroll-link w-inline-block">
-                <img src="https://cdn.prod.website-files.com/611030f94f960b2e229ea3b0/6119c1d83401f47e8d2d8bdd_arrow-bottom-right(24x24)%402x.svg" loading="lazy" alt="" class="scroll-arrow-icon"/>
-            </a>
-            <div id="w-node-_8c2f5e44-76f6-5885-577c-b15d5f6a39ea-ff9ea3b1" class="hero-links">
-                <a id="w-node-_8b499747-6179-93d3-477f-743d7b5dd540-ff9ea3b1" href="/projects" class="underline-link w-inline-block">
-                    <div>Our projects</div>
-                    <div class="hover-line">
-                        <div class="hover-line-fill"></div>
-                    </div>
-                </a>
-                <div id="w-node-_36a32bde-e9e6-f6ca-7526-d051c387a037-ff9ea3b1" class="dot"></div>
-                <a id="w-node-eae1fb38-9031-6958-1e47-8f8fcc9ed929-ff9ea3b1" href="/services" class="underline-link w-inline-block">
-                    <div>View services</div>
-                    <div class="hover-line">
-                        <div class="hover-line-fill"></div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div>
-        <div id="scroll" class="section">
-            <div class="grid-wrapper">
-                <div id="w-node-_5830d63b-46c8-5b51-3d99-9b9070e150c0-ff9ea3b1" class="four-column">
-                    <div id="w-node-_0a2fb6ef-4137-36dc-2525-8e14eced6b7a-ff9ea3b1" class="subtitle">/Services</div>
-                    <div id="w-node-f04b657a-8d31-e85d-ba72-ca58dfb348c3-ff9ea3b1" class="stacked-content">
-                        <div class="medium-width">
-                            <h1 class="heading">We help brands drive growth through digital experiences</h1>
-                        </div>
-                        <div class="three-card-grid">
-                            <div class="card">
-                                <div class="service-card-top">
-                                    <div class="card-link">
-                                        <img src="https://cdn.prod.website-files.com/611030f94f960b2e229ea3b0/6119bfcad260326594898808_page-break(24x24)%402x.svg" loading="lazy" alt=""/>
-                                    </div>
-                                    <div id="w-node-e2b8e9aa-936c-a01d-c6ee-8737e0cfb8f1-ff9ea3b1" class="horizontal-line"></div>
-                                </div>
-                                <div class="stacked-description">
-                                    <h3>Websites</h3>
-                                    <div class="body-display">Lorem ipsum dolor sit amet, consectet adipis elit nam id.</div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="service-card-top">
-                                    <div class="card-link">
-                                        <img src="https://cdn.prod.website-files.com/611030f94f960b2e229ea3b0/6119beb3d26032da51897fb4_bolt(24x24)%402x.svg" loading="lazy" alt=""/>
-                                    </div>
-                                    <div id="w-node-_19ba0351-149c-49c7-9258-8fafe5071dc4-ff9ea3b1" class="horizontal-line"></div>
-                                </div>
-                                <div class="stacked-description">
-                                    <h3>Branding</h3>
-                                    <div class="body-display">Lorem ipsum dolor sit amet, consectet adipis elit nam id.</div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="service-card-top">
-                                    <div class="card-link">
-                                        <img src="https://cdn.prod.website-files.com/611030f94f960b2e229ea3b0/6119bf6c2bec066612c6e933_signal(24x24)%402x.svg" loading="lazy" alt=""/>
-                                    </div>
-                                    <div id="w-node-_2a857918-8baf-f4d7-16a6-fe0eced176e0-ff9ea3b1" class="horizontal-line"></div>
-                                </div>
-                                <div class="stacked-description">
-                                    <h3>Marketing</h3>
-                                    <div class="body-display">Lorem ipsum dolor sit amet, consectet adipis elit nam id.</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section verticle-border no-padding">
-            <div class="grid-wrapper">
-                <div id="w-node-_21ad1e52-1598-df48-2fd0-3d847b66a496-ff9ea3b1" class="four-column">
-                    <div id="w-node-c754577e-89fa-a05c-354d-6d47247e3961-ff9ea3b1" data-w-id="c754577e-89fa-a05c-354d-6d47247e3961" class="video-cover">
-                        <a href="#" class="video-clip w-inline-block w-lightbox">
-                            <div data-w-id="57a53d92-1d3a-fa06-8921-2f32e226971f" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="play-video">
-                                <img src="https://cdn.prod.website-files.com/611030f94f960b2e229ea3b0/6116e72d0340f95b5a141003_play(24x24)%402x%20(1).svg" loading="lazy" alt="" class="play-icon-image"/>
-                                <div class="background-cover body">
-                                    <div class="grain in-element"></div>
-                                </div>
-                            </div>
-                            <div data-poster-url="https://cdn.prod.website-files.com/611030f94f960b2e229ea3b0/61196996539ea1de58d707d8_Video014-poster-00001.jpg" data-video-urls="https://cdn.prod.website-files.com/611030f94f960b2e229ea3b0/61196996539ea1de58d707d8_Video014-transcode.mp4,https://cdn.prod.website-files.com/611030f94f960b2e229ea3b0/61196996539ea1de58d707d8_Video014-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" class="background-video w-background-video w-background-video-atom">
-                                <video id="4c2da22b-51fd-c063-f1f3-3d21e072d857-video" autoplay="" loop="" style="background-image:url(&quot;https://cdn.prod.website-files.com/611030f94f960b2e229ea3b0/61196996539ea1de58d707d8_Video014-poster-00001.jpg&quot;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
-                                    <source src="https://cdn.prod.website-files.com/611030f94f960b2e229ea3b0/61196996539ea1de58d707d8_Video014-transcode.mp4" data-wf-ignore="true"/>
-                                    <source src="https://cdn.prod.website-files.com/611030f94f960b2e229ea3b0/61196996539ea1de58d707d8_Video014-transcode.webm" data-wf-ignore="true"/>
-                                </video>
-                                <div class="overlay light"></div>
-                            </div>
-                            <script type="application/json" class="w-json">{
-                              "items": [
-                                {
-                                  "url": "https://youtube.com/watch?v=NpEaa2P7qZI",
-                                  "originalUrl": "https://youtube.com/watch?v=NpEaa2P7qZI",
-                                  "width": 940,
-                                  "height": 528,
-                                  "thumbnailUrl": "https://i.ytimg.com/vi/NpEaa2P7qZI/hqdefault.jpg",
-                                  "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FNpEaa2P7qZI%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DNpEaa2P7qZI&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FNpEaa2P7qZI%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"940\" height=\"528\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
-                                  "type": "video"
-                                }
-                              ],
-                              "group": ""
-                            }</script>
-                        </a>
-                    </div>
-                    <div id="w-node-_36d22a74-5d68-105d-52bb-05b893d84ee0-ff9ea3b1" class="left-intro">
-                        <div id="w-node-cf668bd9-79bc-8b9d-875f-18e2e51c3313-ff9ea3b1" class="subtitle">/About us</div>
-                        <div id="w-node-ce4ec62b-1373-2967-b41b-8ba08cdddd42-ff9ea3b1" class="stacked-title">
-                            <h1 class="heading">We craft engaging digital experiences that drive results</h1>
-                        </div>
-                        <a id="w-node-_73f25a0e-b0e9-b27a-0f5d-b599a14474cc-ff9ea3b1" href="/about" class="underline-link dark w-inline-block">
-                            <div>Learn more</div>
-                            <div class="hover-line">
-                                <div class="hover-line-fill"></div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="section no-clip">
-        <div class="grid-wrapper">
-            <div id="w-node-_466f1517-9970-0056-02e3-2c6e76aaf15d-ff9ea3b1" data-w-id="466f1517-9970-0056-02e3-2c6e76aaf15d" class="four-column">
-                <div id="w-node-_9ad63a0a-ba32-7e48-144a-66bbf0bcb90c-ff9ea3b1" class="left-sidebar">
-                    <div>
-                        <div class="subtitle">/Our Work</div>
-                    </div>
-                    <a data-w-id="6ad627f2-d438-4dfa-d8ba-cbab594f92d5" href="/projects" class="sticky-circle w-inline-block">
-                        <div class="circle-link-text">View all</div>
-                        <div class="outline-circle-wrapper">
-                            <div id="w-node-b5f91b28-5a0c-7f66-d2b4-127b80225c4b-ff9ea3b1" class="outline-clip top">
-                                <div class="outline-circle"></div>
-                            </div>
-                            <div id="w-node-_19d851e4-2066-f592-c608-0b627fa868f3-ff9ea3b1" class="outline-clip bottom">
-                                <div class="outline-circle"></div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div id="w-node-_2e00f5cc-d222-8bc7-2e87-eaa7e4cd9c79-ff9ea3b1" class="collection-list-wrapper w-dyn-list">
-                    <div role="list" class="project-grid w-dyn-items">
-                        <div role="listitem" class="project-item w-dyn-item">
-                            <a href="/projects/soho-house-comedy" class="project-image w-inline-block">
-                                <div class="view-link">
-                                    <div class="subtitle dark">View</div>
-                                </div>
-                                <div class="view-link-cover"></div>
-                                <div class="project-image-wrapper">
-                                    <div style="background-image:url(&quot;https://cdn.prod.website-files.com/6111b13a0dec1f134a4fd0b2/611a810c23330d3020d01aa3_Comp014.jpeg&quot;)" class="background"></div>
-                                </div>
-                            </a>
-                            <div class="project-card-info">
-                                <div class="card-info">
-                                    <div class="subtitle">Marketing</div>
-                                    <div class="stacked-title">
-                                        <h3 class="heading medium">Soho house comedy</h3>
-                                        <a id="w-node-_2e00f5cc-d222-8bc7-2e87-eaa7e4cd9c86-ff9ea3b1" href="/projects/soho-house-comedy" class="underline-link dark w-inline-block">
-                                            <div>Learn more</div>
-                                            <div class="hover-line">
-                                                <div class="hover-line-fill"></div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div role="listitem" class="project-item w-dyn-item">
-                            <a href="/projects/greenpoint-flower-lounge" class="project-image w-inline-block">
-                                <div class="view-link">
-                                    <div class="subtitle dark">View</div>
-                                </div>
-                                <div class="view-link-cover"></div>
-                                <div class="project-image-wrapper">
-                                    <div style="background-image:url(&quot;https://cdn.prod.website-files.com/6111b13a0dec1f134a4fd0b2/611a8011dd5fd40a3b47a8ad_Comp035.jpeg&quot;)" class="background"></div>
-                                </div>
-                            </a>
-                            <div class="project-card-info">
-                                <div class="card-info">
-                                    <div class="subtitle">Branding</div>
-                                    <div class="stacked-title">
-                                        <h3 class="heading medium">Greenpoint flower lounge</h3>
-                                        <a id="w-node-_2e00f5cc-d222-8bc7-2e87-eaa7e4cd9c86-ff9ea3b1" href="/projects/greenpoint-flower-lounge" class="underline-link dark w-inline-block">
-                                            <div>Learn more</div>
-                                            <div class="hover-line">
-                                                <div class="hover-line-fill"></div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div role="listitem" class="project-item w-dyn-item">
-                            <a href="/projects/tribeca-ventures" class="project-image w-inline-block">
-                                <div class="view-link">
-                                    <div class="subtitle dark">View</div>
-                                </div>
-                                <div class="view-link-cover"></div>
-                                <div class="project-image-wrapper">
-                                    <div style="background-image:url(&quot;https://cdn.prod.website-files.com/6111b13a0dec1f134a4fd0b2/611a80c14d3852f5e6147faa_Comp018.jpeg&quot;)" class="background"></div>
-                                </div>
-                            </a>
-                            <div class="project-card-info">
-                                <div class="card-info">
-                                    <div class="subtitle">Website</div>
-                                    <div class="stacked-title">
-                                        <h3 class="heading medium">Tribeca Ventures</h3>
-                                        <a id="w-node-_2e00f5cc-d222-8bc7-2e87-eaa7e4cd9c86-ff9ea3b1" href="/projects/tribeca-ventures" class="underline-link dark w-inline-block">
-                                            <div>Learn more</div>
-                                            <div class="hover-line">
-                                                <div class="hover-line-fill"></div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div role="listitem" class="project-item w-dyn-item">
-                            <a href="/projects/swiss-galaxy-banking" class="project-image w-inline-block">
-                                <div class="view-link">
-                                    <div class="subtitle dark">View</div>
-                                </div>
-                                <div class="view-link-cover"></div>
-                                <div class="project-image-wrapper">
-                                    <div style="background-image:url(&quot;https://cdn.prod.website-files.com/6111b13a0dec1f134a4fd0b2/611a802bda3fa4786cf19ac0_Comp024.jpeg&quot;)" class="background"></div>
-                                </div>
-                            </a>
-                            <div class="project-card-info">
-                                <div class="card-info">
-                                    <div class="subtitle">Website</div>
-                                    <div class="stacked-title">
-                                        <h3 class="heading medium">Swiss Galaxy Banking</h3>
-                                        <a id="w-node-_2e00f5cc-d222-8bc7-2e87-eaa7e4cd9c86-ff9ea3b1" href="/projects/swiss-galaxy-banking" class="underline-link dark w-inline-block">
-                                            <div>Learn more</div>
-                                            <div class="hover-line">
-                                                <div class="hover-line-fill"></div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div role="listitem" class="project-item w-dyn-item">
-                            <a href="/projects/west-village-corporate" class="project-image w-inline-block">
-                                <div class="view-link">
-                                    <div class="subtitle dark">View</div>
-                                </div>
-                                <div class="view-link-cover"></div>
-                                <div class="project-image-wrapper">
-                                    <div style="background-image:url(&quot;https://cdn.prod.website-files.com/6111b13a0dec1f134a4fd0b2/611a80a24b879a1dd68665a2_Comp006.jpeg&quot;)" class="background"></div>
-                                </div>
-                            </a>
-                            <div class="project-card-info">
-                                <div class="card-info">
-                                    <div class="subtitle">Website</div>
-                                    <div class="stacked-title">
-                                        <h3 class="heading medium">West Village Corporate</h3>
-                                        <a id="w-node-_2e00f5cc-d222-8bc7-2e87-eaa7e4cd9c86-ff9ea3b1" href="/projects/west-village-corporate" class="underline-link dark w-inline-block">
-                                            <div>Learn more</div>
-                                            <div class="hover-line">
-                                                <div class="hover-line-fill"></div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="section top-border no-padding">
-        <div class="grid-wrapper">
-            <div id="w-node-_2e495b9c-d663-6b7e-5089-3a2e4ca2b70d-4ca2b70b" class="four-column">
-                <div id="w-node-_2e495b9c-d663-6b7e-5089-3a2e4ca2b70e-4ca2b70b" class="circles-rotating-wrapper">
-                    <div class="circle-items">
-                        <div class="circle">
-                            <img src="https://cdn.prod.website-files.com/611030f94f960b2e229ea3b0/61195696d26032837c852e69_spotify%201.svg" loading="lazy" alt="" class="logo-image"/>
-                        </div>
-                        <div class="circle">
-                            <img src="https://cdn.prod.website-files.com/611030f94f960b2e229ea3b0/61195679b86b161e46b73df0_kyan%201.svg" loading="lazy" alt="" class="logo-image"/>
-                        </div>
-                        <div class="circle">
-                            <img src="https://cdn.prod.website-files.com/611030f94f960b2e229ea3b0/61195653a0168a40adb401ca_kanba%201.svg" loading="lazy" alt="" class="logo-image"/>
-                        </div>
-                        <div class="circle">
-                            <img src="https://cdn.prod.website-files.com/611030f94f960b2e229ea3b0/6119562592ac1c050ba8b900_aven%201.svg" loading="lazy" alt="" class="logo-image"/>
-                        </div>
-                        <div class="circle">
-                            <img src="https://cdn.prod.website-files.com/611030f94f960b2e229ea3b0/611955cbc48353a81a36b539_goldline%20001.svg" loading="lazy" alt="" class="logo-image"/>
-                        </div>
-                    </div>
-                    <div class="circle-items">
-                        <div class="circle">
-                            <img src="https://cdn.prod.website-files.com/611030f94f960b2e229ea3b0/61195696d26032837c852e69_spotify%201.svg" loading="lazy" alt="" class="logo-image"/>
-                        </div>
-                        <div class="circle">
-                            <img src="https://cdn.prod.website-files.com/611030f94f960b2e229ea3b0/61195679b86b161e46b73df0_kyan%201.svg" loading="lazy" alt="" class="logo-image"/>
-                        </div>
-                        <div class="circle">
-                            <img src="https://cdn.prod.website-files.com/611030f94f960b2e229ea3b0/61195653a0168a40adb401ca_kanba%201.svg" loading="lazy" alt="" class="logo-image"/>
-                        </div>
-                        <div class="circle">
-                            <img src="https://cdn.prod.website-files.com/611030f94f960b2e229ea3b0/6119562592ac1c050ba8b900_aven%201.svg" loading="lazy" alt="" class="logo-image"/>
-                        </div>
-                        <div class="circle">
-                            <img src="https://cdn.prod.website-files.com/611030f94f960b2e229ea3b0/611955cbc48353a81a36b539_goldline%20001.svg" loading="lazy" alt="" class="logo-image"/>
-                        </div>
-                    </div>
-                </div>
-                <div id="w-node-_2e495b9c-d663-6b7e-5089-3a2e4ca2b71d-4ca2b70b" class="rotating-circles"></div>
-            </div>
-        </div>
-    </div>
-    <div class="section">
-        <div class="grid-wrapper">
-            <div id="w-node-_46bd5263-c747-7018-d10b-ecb6298796da-298796d8" class="four-column">
-                <div id="w-node-_46bd5263-c747-7018-d10b-ecb6298796db-298796d8" class="testimonial-items">
-                    <div class="grain-wrapper">
-                        <div class="grain in-element"></div>
-                    </div>
-                    <div data-delay="4000" data-animation="slide" class="testimonial-slider w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="true" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
-                        <div class="w-slider-mask">
-                            <div class="quote-slide w-slide">
-                                <div class="testimonial-card">
-                                    <div id="w-node-_46bd5263-c747-7018-d10b-ecb6298796e2-298796d8" class="testimonial-quote">
-                                        <h2 class="testimonial-text">&quot;Quisque id elit semper, vehicula tellus in, posuere lacus. Curabitur nisi eros, finibus ac eleifend at, varius vel purus. Vest ante ipsum primis in faucibus orc.&quot;</h2>
-                                        <div class="testimonial-credit">
-                                            <div class="avatar one"></div>
-                                            <div id="w-node-_46bd5263-c747-7018-d10b-ecb6298796e7-298796d8" class="testimonial-name">
-                                                <div class="client-name">
-                                                    Kelsey Baine
-                                                    <br/>
-                                                </div>
-                                                <div class="subtitle small">
-                                                    Walt Disney
-                                                    <br/>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="w-node-_46bd5263-c747-7018-d10b-ecb6298796ee-298796d8" class="testimonial-image">
-                                        <div class="testimonial-feature"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="quote-slide w-slide">
-                                <div class="testimonial-card">
-                                    <div id="w-node-_1f4ba397-2fe6-0b23-454e-f07ba76d3fe0-298796d8" class="testimonial-quote">
-                                        <h2 class="testimonial-text">&quot;Cras enim odio, imperdiet nec lacus quis, dictum egestas ante. Viva condim mi a nibh auctor ulla quam. Donec at lorem enim.&quot;</h2>
-                                        <div class="testimonial-credit">
-                                            <div class="avatar two"></div>
-                                            <div id="w-node-_1f4ba397-2fe6-0b23-454e-f07ba76d3fe5-298796d8" class="testimonial-name">
-                                                <div class="client-name">
-                                                    Sarah Macky
-                                                    <br/>
-                                                </div>
-                                                <div class="subtitle small">
-                                                    Airtable
-                                                    <br/>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="w-node-_1f4ba397-2fe6-0b23-454e-f07ba76d3fec-298796d8" class="testimonial-image">
-                                        <div class="testimonial-feature two"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="quote-slide w-slide">
-                                <div class="testimonial-card">
-                                    <div id="w-node-_89ee30a4-b4f7-a3ad-9682-4625c7081bec-298796d8" class="testimonial-quote">
-                                        <h2 class="testimonial-text">&quot;Duis quis dui nulla. Nam cursus non purus ut sodales. Cras cond, ipsum nec cursus feugiat, tellus metus dignissim dolor.&quot;</h2>
-                                        <div class="testimonial-credit">
-                                            <div class="avatar three"></div>
-                                            <div id="w-node-_89ee30a4-b4f7-a3ad-9682-4625c7081bf1-298796d8" class="testimonial-name">
-                                                <div class="client-name">
-                                                    Alex Morton
-                                                    <br/>
-                                                </div>
-                                                <div class="subtitle small">
-                                                    Microsoft
-                                                    <br/>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="w-node-_89ee30a4-b4f7-a3ad-9682-4625c7081bf8-298796d8" class="testimonial-image">
-                                        <div class="testimonial-feature three"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="quote-slide w-slide">
-                                <div class="testimonial-card">
-                                    <div id="w-node-_3ed3f175-d5af-cec8-6219-8e16373aeac3-298796d8" class="testimonial-quote">
-                                        <h2 class="testimonial-text">&quot;Morbi vel sapien dignissim, commodo nunc eget, finibus eros. Aliquam iaculis diam et ex rhoncus, sit amet auctor enim luctus. Donec sed posuere.&quot;</h2>
-                                        <div class="testimonial-credit">
-                                            <div class="avatar four"></div>
-                                            <div id="w-node-_3ed3f175-d5af-cec8-6219-8e16373aeac8-298796d8" class="testimonial-name">
-                                                <div class="client-name">
-                                                    Terry Gilbert
-                                                    <br/>
-                                                </div>
-                                                <div class="subtitle small">
-                                                    Oracle
-                                                    <br/>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="w-node-_3ed3f175-d5af-cec8-6219-8e16373aeacf-298796d8" class="testimonial-image">
-                                        <div class="testimonial-feature four"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="quote-slide w-slide">
-                                <div class="testimonial-card">
-                                    <div id="w-node-_139058a6-e504-29fa-4d7b-d208600bb9ad-298796d8" class="testimonial-quote">
-                                        <h2 class="testimonial-text">&quot;Maecenas nec nisl quis mauris euismod euismod ac vitae sem. Curabitur ante libero, dictum ut ante vitae, volutat tincidunt leo, id cursus odio conval ut.&quot;</h2>
-                                        <div class="testimonial-credit">
-                                            <div class="avatar five"></div>
-                                            <div id="w-node-_139058a6-e504-29fa-4d7b-d208600bb9b2-298796d8" class="testimonial-name">
-                                                <div class="client-name">
-                                                    Kelsey Baine
-                                                    <br/>
-                                                </div>
-                                                <div class="subtitle small">
-                                                    Walt Disney
-                                                    <br/>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="w-node-_139058a6-e504-29fa-4d7b-d208600bb9b9-298796d8" class="testimonial-image">
-                                        <div class="testimonial-feature five"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="left-arrow w-slider-arrow-left">
-                            <div class="rotate-text">Prev</div>
-                        </div>
-                        <div class="left-arrow bottom w-slider-arrow-right">
-                            <div class="rotate-text">Next</div>
-                        </div>
-                        <div class="slide-nav w-slider-nav w-round"></div>
-                    </div>
-                </div>
-            </div>
-            <div id="w-node-_46bd5263-c747-7018-d10b-ecb6298796f6-298796d8" class="dark-fill">
-                <div class="grain-wrapper">
-                    <div class="grain in-element"></div>
-                </div>
-            </div>
-        </div>
-        <div class="background-wrapper">
-            <div class="background testimonial-background">
-                <div class="overlay"></div>
-            </div>
-        </div>
-    </div>
-    <div class="section">
-        <div class="grid-wrapper">
-            <div id="w-node-c20e6167-7305-b1a6-feda-7e0ed87cf014-d87cf012" class="four-column">
-                <div id="w-node-c20e6167-7305-b1a6-feda-7e0ed87cf015-d87cf012" class="stacked-content large">
-                    <div id="w-node-c20e6167-7305-b1a6-feda-7e0ed87cf016-d87cf012" class="centered-intro medium-width">
-                        <div class="stacked-title">
-                            <div class="subtitle">/Behind Empathy/</div>
-                            <h1 class="heading">Meet the team</h1>
-                        </div>
-                    </div>
-                    <div data-delay="10" data-animation="slide" class="gallery-slider w-slider" data-autoplay="true" data-easing="ease-out-quad" data-hide-arrows="true" data-disable-swipe="false" data-autoplay-limit="1" data-nav-spacing="9" data-duration="800" data-infinite="true">
-                        <div class="gallery-mask w-slider-mask">
-                            <div class="gallery-slide w-slide">
-                                <div class="gallery-image-wrapper">
-                                    <div class="gallery-content">
-                                        <div id="w-node-_95529761-d9e6-9a28-765b-0bd1968e5afa-d87cf012" class="rotating-card-text">
-                                            <div id="out" class="rotate-text-wrapper bottom-text">
-                                                <h1 class="rotate-heading">Jessica Point</h1>
-                                                <div id="w-node-bf1899bb-7b74-2066-9e6b-7aa2b076b897-d87cf012" class="dot large"></div>
-                                                <h1 class="rotate-heading">Jessica Point</h1>
-                                                <div id="w-node-bf1899bb-7b74-2066-9e6b-7aa2b076b89a-d87cf012" class="dot large"></div>
-                                                <h1 class="rotate-heading">Jessica Point</h1>
-                                                <div id="w-node-bf1899bb-7b74-2066-9e6b-7aa2b076b89d-d87cf012" class="dot large"></div>
-                                            </div>
-                                            <div id="out" class="rotate-text-wrapper bottom-text">
-                                                <h1 class="rotate-heading">Jessica Point</h1>
-                                                <div id="w-node-_910c4bb4-e947-3172-3a7d-cf9e53f09d6b-d87cf012" class="dot large"></div>
-                                                <h1 class="rotate-heading">Jessica Point</h1>
-                                                <div id="w-node-_910c4bb4-e947-3172-3a7d-cf9e53f09d6e-d87cf012" class="dot large"></div>
-                                                <h1 class="rotate-heading">Jessica Point</h1>
-                                                <div id="w-node-_910c4bb4-e947-3172-3a7d-cf9e53f09d71-d87cf012" class="dot large"></div>
-                                            </div>
-                                        </div>
-                                        <div id="w-node-_04ab2307-4ba6-5682-7378-e7458849466a-d87cf012" class="social-icon-wrapper">
-                                            <a href="https://www.instagram.com/tycreated/" target="_blank" class="social-icon w-inline-block">
-                                                <img src="https://cdn.prod.website-files.com/611030f94f960b2e229ea3b0/61168f66c965b07277602581_instagram-logo.svg" loading="lazy" alt="" class="social-icon-image"/>
-                                            </a>
-                                            <a href="https://twitter.com/Tycreated" target="_blank" class="social-icon w-inline-block">
-                                                <img src="https://cdn.prod.website-files.com/611030f94f960b2e229ea3b0/61168f7c7b50eaa404267a8a_twitter%20(2).svg" loading="lazy" alt="" class="social-icon-image"/>
-                                            </a>
-                                            <a href="https://twitter.com/Tycreated" target="_blank" class="social-icon w-inline-block">
-                                                <img src="https://cdn.prod.website-files.com/611030f94f960b2e229ea3b0/6116905253df13d41782fe6f_facebook-f%20(1).svg" loading="lazy" alt="" class="social-icon-image"/>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="gallery-image">
-                                        <div class="gallery-background one"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="gallery-slide w-slide">
-                                <div class="gallery-image-wrapper">
-                                    <div class="gallery-content">
-                                        <div id="w-node-ca084f80-24a8-6c57-4e28-c46d1cb45a64-d87cf012" class="rotating-card-text">
-                                            <div id="out" class="rotate-text-wrapper bottom-text">
-                                                <h1 class="rotate-heading">Cassie Donald</h1>
-                                                <div class="dot large"></div>
-                                                <h1 class="rotate-heading">Cassie Donald</h1>
-                                                <div class="dot large"></div>
-                                                <h1 class="rotate-heading">Cassie Donald</h1>
-                                                <div class="dot large"></div>
-                                            </div>
-                                            <div id="out" class="rotate-text-wrapper bottom-text">
-                                                <h1 class="rotate-heading">Cassie Donald</h1>
-                                                <div class="dot large"></div>
-                                                <h1 class="rotate-heading">Cassie Donald</h1>
-                                                <div class="dot large"></div>
-                                                <h1 class="rotate-heading">Cassie Donald</h1>
-                                                <div class="dot large"></div>
-                                            </div>
-                                        </div>
-                                        <div id="w-node-ca084f80-24a8-6c57-4e28-c46d1cb45a79-d87cf012" class="social-icon-wrapper">
-                                            <a href="https://www.instagram.com/tycreated/" target="_blank" class="social-icon w-inline-block">
-                                                <img src="https://cdn.prod.website-files.com/611030f94f960b2e229ea3b0/61168f66c965b07277602581_instagram-logo.svg" loading="lazy" alt="" class="social-icon-image"/>
-                                            </a>
-                                            <a href="https://twitter.com/Tycreated" target="_blank" class="social-icon w-inline-block">
-                                                <img src="https://cdn.prod.website-files.com/611030f94f960b2e229ea3b0/61168f7c7b50eaa404267a8a_twitter%20(2).svg" loading="lazy" alt="" class="social-icon-image"/>
-                                            </a>
-                                            <a href="https://twitter.com/Tycreated" target="_blank" class="social-icon w-inline-block">
-                                                <img src="https://cdn.prod.website-files.com/611030f94f960b2e229ea3b0/6116905253df13d41782fe6f_facebook-f%20(1).svg" loading="lazy" alt="" class="social-icon-image"/>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="gallery-image">
-                                        <div class="gallery-background two"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="gallery-slide w-slide">
-                                <div class="gallery-image-wrapper">
-                                    <div class="gallery-content">
-                                        <div id="w-node-_50278d42-2c23-d07b-dd95-4d2b57a6d590-d87cf012" class="rotating-card-text">
-                                            <div id="out" class="rotate-text-wrapper bottom-text">
-                                                <h1 class="rotate-heading">Jason Vermate</h1>
-                                                <div class="dot large"></div>
-                                                <h1 class="rotate-heading">Jason Vermate</h1>
-                                                <div class="dot large"></div>
-                                                <h1 class="rotate-heading">Jason Vermate</h1>
-                                                <div class="dot large"></div>
-                                            </div>
-                                            <div id="out" class="rotate-text-wrapper bottom-text">
-                                                <h1 class="rotate-heading">Jason Vermate</h1>
-                                                <div class="dot large"></div>
-                                                <h1 class="rotate-heading">Jason Vermate</h1>
-                                                <div class="dot large"></div>
-                                                <h1 class="rotate-heading">Jason Vermate</h1>
-                                                <div class="dot large"></div>
-                                            </div>
-                                        </div>
-                                        <div id="w-node-_50278d42-2c23-d07b-dd95-4d2b57a6d5a5-d87cf012" class="social-icon-wrapper">
-                                            <a href="https://www.instagram.com/tycreated/" target="_blank" class="social-icon w-inline-block">
-                                                <img src="https://cdn.prod.website-files.com/611030f94f960b2e229ea3b0/61168f66c965b07277602581_instagram-logo.svg" loading="lazy" alt="" class="social-icon-image"/>
-                                            </a>
-                                            <a href="https://twitter.com/Tycreated" target="_blank" class="social-icon w-inline-block">
-                                                <img src="https://cdn.prod.website-files.com/611030f94f960b2e229ea3b0/61168f7c7b50eaa404267a8a_twitter%20(2).svg" loading="lazy" alt="" class="social-icon-image"/>
-                                            </a>
-                                            <a href="https://twitter.com/Tycreated" target="_blank" class="social-icon w-inline-block">
-                                                <img src="https://cdn.prod.website-files.com/611030f94f960b2e229ea3b0/6116905253df13d41782fe6f_facebook-f%20(1).svg" loading="lazy" alt="" class="social-icon-image"/>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="gallery-image">
-                                        <div class="gallery-background three"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="gallery-slide w-slide">
-                                <div class="gallery-image-wrapper">
-                                    <div class="gallery-content">
-                                        <div id="w-node-_2d5e59b5-7026-abdc-c69a-047c7a9bee2e-d87cf012" class="rotating-card-text">
-                                            <div id="out" class="rotate-text-wrapper bottom-text">
-                                                <h1 class="rotate-heading">Eliot Matson</h1>
-                                                <div class="dot large"></div>
-                                                <h1 class="rotate-heading">Eliot Matson</h1>
-                                                <div class="dot large"></div>
-                                                <h1 class="rotate-heading">Eliot Matson</h1>
-                                                <div class="dot large"></div>
-                                            </div>
-                                            <div id="out" class="rotate-text-wrapper bottom-text">
-                                                <h1 class="rotate-heading">Eliot Matson</h1>
-                                                <div class="dot large"></div>
-                                                <h1 class="rotate-heading">Eliot Matson</h1>
-                                                <div class="dot large"></div>
-                                                <h1 class="rotate-heading">Eliot Matson</h1>
-                                                <div class="dot large"></div>
-                                            </div>
-                                        </div>
-                                        <div id="w-node-_2d5e59b5-7026-abdc-c69a-047c7a9bee43-d87cf012" class="social-icon-wrapper">
-                                            <a href="https://www.instagram.com/tycreated/" target="_blank" class="social-icon w-inline-block">
-                                                <img src="https://cdn.prod.website-files.com/611030f94f960b2e229ea3b0/61168f66c965b07277602581_instagram-logo.svg" loading="lazy" alt="" class="social-icon-image"/>
-                                            </a>
-                                            <a href="https://twitter.com/Tycreated" target="_blank" class="social-icon w-inline-block">
-                                                <img src="https://cdn.prod.website-files.com/611030f94f960b2e229ea3b0/61168f7c7b50eaa404267a8a_twitter%20(2).svg" loading="lazy" alt="" class="social-icon-image"/>
-                                            </a>
-                                            <a href="https://twitter.com/Tycreated" target="_blank" class="social-icon w-inline-block">
-                                                <img src="https://cdn.prod.website-files.com/611030f94f960b2e229ea3b0/6116905253df13d41782fe6f_facebook-f%20(1).svg" loading="lazy" alt="" class="social-icon-image"/>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="gallery-image">
-                                        <div class="gallery-background four"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="gallery-slide w-slide">
-                                <div class="gallery-image-wrapper">
-                                    <div class="gallery-content">
-                                        <div id="w-node-_17eed15b-0621-200f-3893-1c588b34db69-d87cf012" class="rotating-card-text">
-                                            <div id="out" class="rotate-text-wrapper bottom-text">
-                                                <h1 class="rotate-heading">Shay Walton</h1>
-                                                <div class="dot large"></div>
-                                                <h1 class="rotate-heading">Shay Walton</h1>
-                                                <div class="dot large"></div>
-                                                <h1 class="rotate-heading">Shay Walton</h1>
-                                                <div class="dot large"></div>
-                                            </div>
-                                            <div id="out" class="rotate-text-wrapper bottom-text">
-                                                <h1 class="rotate-heading">Shay Walton</h1>
-                                                <div class="dot large"></div>
-                                                <h1 class="rotate-heading">Shay Walton</h1>
-                                                <div class="dot large"></div>
-                                                <h1 class="rotate-heading">Shay Walton</h1>
-                                                <div class="dot large"></div>
-                                            </div>
-                                        </div>
-                                        <div id="w-node-_17eed15b-0621-200f-3893-1c588b34db7e-d87cf012" class="social-icon-wrapper">
-                                            <a href="https://www.instagram.com/tycreated/" target="_blank" class="social-icon w-inline-block">
-                                                <img src="https://cdn.prod.website-files.com/611030f94f960b2e229ea3b0/61168f66c965b07277602581_instagram-logo.svg" loading="lazy" alt="" class="social-icon-image"/>
-                                            </a>
-                                            <a href="https://twitter.com/Tycreated" target="_blank" class="social-icon w-inline-block">
-                                                <img src="https://cdn.prod.website-files.com/611030f94f960b2e229ea3b0/61168f7c7b50eaa404267a8a_twitter%20(2).svg" loading="lazy" alt="" class="social-icon-image"/>
-                                            </a>
-                                            <a href="https://twitter.com/Tycreated" target="_blank" class="social-icon w-inline-block">
-                                                <img src="https://cdn.prod.website-files.com/611030f94f960b2e229ea3b0/6116905253df13d41782fe6f_facebook-f%20(1).svg" loading="lazy" alt="" class="social-icon-image"/>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="gallery-image">
-                                        <div class="gallery-background five"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gallery-arrow w-slider-arrow-left">
-                            <div class="view-link">
-                                <div class="subtitle dark">View</div>
-                            </div>
-                            <div class="view-link-cover"></div>
-                        </div>
-                        <div class="gallery-arrow right w-slider-arrow-right">
-                            <div class="view-link">
-                                <div class="subtitle dark">View</div>
-                            </div>
-                            <div class="view-link-cover"></div>
-                        </div>
-                        <div class="item-slide-nav w-slider-nav w-round"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="section small-top-padding no-clip">
-        <div class="grid-wrapper">
-            <div id="w-node-_877fbf84-535a-c637-1ecb-4a06f76bad23-ff9ea3b1" data-w-id="877fbf84-535a-c637-1ecb-4a06f76bad23" class="four-column">
-                <div id="w-node-_877fbf84-535a-c637-1ecb-4a06f76bad24-ff9ea3b1" class="left-sidebar">
-                    <div class="subtitle">/Recent news</div>
-                    <a href="/news" class="sticky-circle w-inline-block">
-                        <div class="circle-link-text">View all</div>
-                        <div class="outline-circle-wrapper">
-                            <div id="w-node-_877fbf84-535a-c637-1ecb-4a06f76bad2c-ff9ea3b1" class="outline-clip top">
-                                <div class="outline-circle"></div>
-                            </div>
-                            <div id="w-node-_877fbf84-535a-c637-1ecb-4a06f76bad2e-ff9ea3b1" class="outline-clip bottom">
-                                <div class="outline-circle"></div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div id="w-node-_5ccf5cf6-ce94-edd9-8f43-c3d71e3f2ba1-ff9ea3b1" class="collection-list-wrapper w-dyn-list">
-                    <div role="list" class="news-list w-dyn-items">
-                        <div role="listitem" class="w-dyn-item">
-                            <a data-w-id="5ccf5cf6-ce94-edd9-8f43-c3d71e3f2ba4" href="/news/10-great-examples-of-responsive-websites" class="list-item w-inline-block">
-                                <div id="w-node-_5ccf5cf6-ce94-edd9-8f43-c3d71e3f2ba5-ff9ea3b1" class="clip-heading">7.20.2021</div>
-                                <div id="w-node-_5ccf5cf6-ce94-edd9-8f43-c3d71e3f2ba6-ff9ea3b1" class="news-line"></div>
-                                <div class="news-title-wrapper">
-                                    <div data-w-id="5ccf5cf6-ce94-edd9-8f43-c3d71e3f2ba8" class="fixed-hover-image">
-                                        <div style="background-image:url(&quot;https://cdn.prod.website-files.com/6111b13a0dec1f134a4fd0b2/611a80bbf0a417877311e1dd_Comp016.jpeg&quot;)" class="background"></div>
-                                    </div>
-                                    <div class="news-title">
-                                        <div class="title left">
-                                            <h3 id="outsmall" class="clip-heading">10 Great Examples of Responsive Websites</h3>
-                                        </div>
-                                        <div id="w-node-_5ccf5cf6-ce94-edd9-8f43-c3d71e3f2bae-ff9ea3b1" class="news-dot"></div>
-                                        <div id="w-node-_5ccf5cf6-ce94-edd9-8f43-c3d71e3f2baf-ff9ea3b1" class="title right">
-                                            <h3 id="outsmall" class="clip-heading">10 Great Examples of Responsive Websites</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div role="listitem" class="w-dyn-item">
-                            <a data-w-id="5ccf5cf6-ce94-edd9-8f43-c3d71e3f2ba4" href="/news/how-to-improve-web-design-process" class="list-item w-inline-block">
-                                <div id="w-node-_5ccf5cf6-ce94-edd9-8f43-c3d71e3f2ba5-ff9ea3b1" class="clip-heading">6.23.2021</div>
-                                <div id="w-node-_5ccf5cf6-ce94-edd9-8f43-c3d71e3f2ba6-ff9ea3b1" class="news-line"></div>
-                                <div class="news-title-wrapper">
-                                    <div data-w-id="5ccf5cf6-ce94-edd9-8f43-c3d71e3f2ba8" class="fixed-hover-image">
-                                        <div style="background-image:url(&quot;https://cdn.prod.website-files.com/6111b13a0dec1f134a4fd0b2/611a8046de7bcf66b38bc4bf_Comp023.jpeg&quot;)" class="background"></div>
-                                    </div>
-                                    <div class="news-title">
-                                        <div class="title left">
-                                            <h3 id="outsmall" class="clip-heading">How to improve Web Design Process</h3>
-                                        </div>
-                                        <div id="w-node-_5ccf5cf6-ce94-edd9-8f43-c3d71e3f2bae-ff9ea3b1" class="news-dot"></div>
-                                        <div id="w-node-_5ccf5cf6-ce94-edd9-8f43-c3d71e3f2baf-ff9ea3b1" class="title right">
-                                            <h3 id="outsmall" class="clip-heading">How to improve Web Design Process</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div role="listitem" class="w-dyn-item">
-                            <a data-w-id="5ccf5cf6-ce94-edd9-8f43-c3d71e3f2ba4" href="/news/14-common-misconceptions-about-web-design" class="list-item w-inline-block">
-                                <div id="w-node-_5ccf5cf6-ce94-edd9-8f43-c3d71e3f2ba5-ff9ea3b1" class="clip-heading">6.18.2021</div>
-                                <div id="w-node-_5ccf5cf6-ce94-edd9-8f43-c3d71e3f2ba6-ff9ea3b1" class="news-line"></div>
-                                <div class="news-title-wrapper">
-                                    <div data-w-id="5ccf5cf6-ce94-edd9-8f43-c3d71e3f2ba8" class="fixed-hover-image">
-                                        <div style="background-image:url(&quot;https://cdn.prod.website-files.com/6111b13a0dec1f134a4fd0b2/611a807b4262113c6691b96d_Comp034.jpeg&quot;)" class="background"></div>
-                                    </div>
-                                    <div class="news-title">
-                                        <div class="title left">
-                                            <h3 id="outsmall" class="clip-heading">14 Common Misconceptions About Web Design</h3>
-                                        </div>
-                                        <div id="w-node-_5ccf5cf6-ce94-edd9-8f43-c3d71e3f2bae-ff9ea3b1" class="news-dot"></div>
-                                        <div id="w-node-_5ccf5cf6-ce94-edd9-8f43-c3d71e3f2baf-ff9ea3b1" class="title right">
-                                            <h3 id="outsmall" class="clip-heading">14 Common Misconceptions About Web Design</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div role="listitem" class="w-dyn-item">
-                            <a data-w-id="5ccf5cf6-ce94-edd9-8f43-c3d71e3f2ba4" href="/news/7-ways-to-improve-website-usability-and-accessibility" class="list-item w-inline-block">
-                                <div id="w-node-_5ccf5cf6-ce94-edd9-8f43-c3d71e3f2ba5-ff9ea3b1" class="clip-heading">5.16.2021</div>
-                                <div id="w-node-_5ccf5cf6-ce94-edd9-8f43-c3d71e3f2ba6-ff9ea3b1" class="news-line"></div>
-                                <div class="news-title-wrapper">
-                                    <div data-w-id="5ccf5cf6-ce94-edd9-8f43-c3d71e3f2ba8" class="fixed-hover-image">
-                                        <div style="background-image:url(&quot;https://cdn.prod.website-files.com/6111b13a0dec1f134a4fd0b2/611a80b2726fdb69c316fd50_Comp017.jpeg&quot;)" class="background"></div>
-                                    </div>
-                                    <div class="news-title">
-                                        <div class="title left">
-                                            <h3 id="outsmall" class="clip-heading">7 Ways To Improve Website Usability And Accessibility</h3>
-                                        </div>
-                                        <div id="w-node-_5ccf5cf6-ce94-edd9-8f43-c3d71e3f2bae-ff9ea3b1" class="news-dot"></div>
-                                        <div id="w-node-_5ccf5cf6-ce94-edd9-8f43-c3d71e3f2baf-ff9ea3b1" class="title right">
-                                            <h3 id="outsmall" class="clip-heading">7 Ways To Improve Website Usability And Accessibility</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div role="listitem" class="w-dyn-item">
-                            <a data-w-id="5ccf5cf6-ce94-edd9-8f43-c3d71e3f2ba4" href="/news/what-will-website-be-like-in-100-years" class="list-item w-inline-block">
-                                <div id="w-node-_5ccf5cf6-ce94-edd9-8f43-c3d71e3f2ba5-ff9ea3b1" class="clip-heading">3.17.2021</div>
-                                <div id="w-node-_5ccf5cf6-ce94-edd9-8f43-c3d71e3f2ba6-ff9ea3b1" class="news-line"></div>
-                                <div class="news-title-wrapper">
-                                    <div data-w-id="5ccf5cf6-ce94-edd9-8f43-c3d71e3f2ba8" class="fixed-hover-image">
-                                        <div style="background-image:url(&quot;https://cdn.prod.website-files.com/6111b13a0dec1f134a4fd0b2/611a8089c92ced45eb8c399a_Comp012.jpeg&quot;)" class="background"></div>
-                                    </div>
-                                    <div class="news-title">
-                                        <div class="title left">
-                                            <h3 id="outsmall" class="clip-heading">What Will Website Be Like In 100 Years?</h3>
-                                        </div>
-                                        <div id="w-node-_5ccf5cf6-ce94-edd9-8f43-c3d71e3f2bae-ff9ea3b1" class="news-dot"></div>
-                                        <div id="w-node-_5ccf5cf6-ce94-edd9-8f43-c3d71e3f2baf-ff9ea3b1" class="title right">
-                                            <h3 id="outsmall" class="clip-heading">What Will Website Be Like In 100 Years?</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div role="listitem" class="w-dyn-item">
-                            <a data-w-id="5ccf5cf6-ce94-edd9-8f43-c3d71e3f2ba4" href="/news/15-best-blogs-to-follow-about-web-design" class="list-item w-inline-block">
-                                <div id="w-node-_5ccf5cf6-ce94-edd9-8f43-c3d71e3f2ba5-ff9ea3b1" class="clip-heading">2.28.2021</div>
-                                <div id="w-node-_5ccf5cf6-ce94-edd9-8f43-c3d71e3f2ba6-ff9ea3b1" class="news-line"></div>
-                                <div class="news-title-wrapper">
-                                    <div data-w-id="5ccf5cf6-ce94-edd9-8f43-c3d71e3f2ba8" class="fixed-hover-image">
-                                        <div style="background-image:url(&quot;https://cdn.prod.website-files.com/6111b13a0dec1f134a4fd0b2/611a814c7705f3d492e0e6c9_Comp025.jpeg&quot;)" class="background"></div>
-                                    </div>
-                                    <div class="news-title">
-                                        <div class="title left">
-                                            <h3 id="outsmall" class="clip-heading">15 Best Blogs To Follow About Web Design</h3>
-                                        </div>
-                                        <div id="w-node-_5ccf5cf6-ce94-edd9-8f43-c3d71e3f2bae-ff9ea3b1" class="news-dot"></div>
-                                        <div id="w-node-_5ccf5cf6-ce94-edd9-8f43-c3d71e3f2baf-ff9ea3b1" class="title right">
-                                            <h3 id="outsmall" class="clip-heading">15 Best Blogs To Follow About Web Design</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div role="listitem" class="w-dyn-item">
-                            <a data-w-id="5ccf5cf6-ce94-edd9-8f43-c3d71e3f2ba4" href="/news/7-things-about-web-design-your-boss-wants-to-know" class="list-item w-inline-block">
-                                <div id="w-node-_5ccf5cf6-ce94-edd9-8f43-c3d71e3f2ba5-ff9ea3b1" class="clip-heading">1.29.2021</div>
-                                <div id="w-node-_5ccf5cf6-ce94-edd9-8f43-c3d71e3f2ba6-ff9ea3b1" class="news-line"></div>
-                                <div class="news-title-wrapper">
-                                    <div data-w-id="5ccf5cf6-ce94-edd9-8f43-c3d71e3f2ba8" class="fixed-hover-image">
-                                        <div style="background-image:url(&quot;https://cdn.prod.website-files.com/6111b13a0dec1f134a4fd0b2/611a801084a93c0ce4853ed7_Comp041.jpeg&quot;)" class="background"></div>
-                                    </div>
-                                    <div class="news-title">
-                                        <div class="title left">
-                                            <h3 id="outsmall" class="clip-heading">7 Things About Web Design Your Boss Wants To Know</h3>
-                                        </div>
-                                        <div id="w-node-_5ccf5cf6-ce94-edd9-8f43-c3d71e3f2bae-ff9ea3b1" class="news-dot"></div>
-                                        <div id="w-node-_5ccf5cf6-ce94-edd9-8f43-c3d71e3f2baf-ff9ea3b1" class="title right">
-                                            <h3 id="outsmall" class="clip-heading">7 Things About Web Design Your Boss Wants To Know</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div data-w-id="3aa902ee-67d8-b7c3-e8d4-e5cf74e8a914" class="section top-border">
-        <div class="grid-wrapper">
-            <div id="w-node-_3aa902ee-67d8-b7c3-e8d4-e5cf74e8a916-74e8a914" class="four-column">
-                <div id="w-node-_3aa902ee-67d8-b7c3-e8d4-e5cf74e8a917-74e8a914" class="call-to-action-intro">
-                    <div class="stacked-title">
-                        <div class="subtitle">/Let&#x27;s talk/</div>
-                        <h1 class="heading">Ready to build experiences your audience will love?</h1>
-                    </div>
-                    <div id="w-node-_3aa902ee-67d8-b7c3-e8d4-e5cf74e8a91d-74e8a914" class="button-wrapper">
-                        <div id="w-node-_3aa902ee-67d8-b7c3-e8d4-e5cf74e8a91e-74e8a914" class="arrow-base left">
-                            <div id="w-node-_3aa902ee-67d8-b7c3-e8d4-e5cf74e8a91f-74e8a914" class="arrow-line left"></div>
-                            <div class="arrow-corner left"></div>
-                        </div>
-                        <a data-w-id="3aa902ee-67d8-b7c3-e8d4-e5cf74e8a921" href="/contact" class="button w-inline-block">
-                            <div class="button-text">Schedule a call</div>
-                            <div class="button-outline">
-                                <div class="grain in-element"></div>
-                                <div id="w-node-_3aa902ee-67d8-b7c3-e8d4-e5cf74e8a926-74e8a914" class="button-outline-wrapper left">
-                                    <div class="button-outline-fill"></div>
-                                </div>
-                                <div id="w-node-_3aa902ee-67d8-b7c3-e8d4-e5cf74e8a928-74e8a914" class="button-outline-wrapper right">
-                                    <div class="button-outline-fill"></div>
-                                </div>
-                            </div>
-                        </a>
-                        <div id="w-node-_3aa902ee-67d8-b7c3-e8d4-e5cf74e8a92a-74e8a914" class="arrow-base right">
-                            <div class="arrow-corner right"></div>
-                            <div id="w-node-_3aa902ee-67d8-b7c3-e8d4-e5cf74e8a92c-74e8a914" class="arrow-line right"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="grain"></div>
-    <div class="footer-section">
-        <div class="grid-wrapper">
-            <div id="w-node-_059053f2-7e12-d605-40ed-f89887a3772c-87a3772a" class="four-column">
-                <div id="w-node-bae95818-dd8f-81a5-a478-fe2cf81a0e74-87a3772a" class="footer-links-wrapper">
-                    <div class="footer-column">
-                        <a href="/" aria-current="page" class="footer-link w-inline-block w--current">
-                            <div>HOME</div>
-                            <div class="hover-line">
-                                <div class="hover-line-fill"></div>
-                            </div>
-                        </a>
-                        <a href="/services" class="footer-link w-inline-block">
-                            <div>SERVICES</div>
-                            <div class="hover-line">
-                                <div class="hover-line-fill"></div>
-                            </div>
-                        </a>
-                        <a href="/about" class="footer-link w-inline-block">
-                            <div>ABOUT</div>
-                            <div class="hover-line">
-                                <div class="hover-line-fill"></div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="footer-column right">
-                        <a href="/projects" class="footer-link w-inline-block">
-                            <div>PROJECTS</div>
-                            <div class="hover-line">
-                                <div class="hover-line-fill"></div>
-                            </div>
-                        </a>
-                        <a href="/news" class="footer-link w-inline-block">
-                            <div>NEWS</div>
-                            <div class="hover-line">
-                                <div class="hover-line-fill"></div>
-                            </div>
-                        </a>
-                        <a href="/contact" class="footer-link w-inline-block">
-                            <div>Contact</div>
-                            <div class="hover-line">
-                                <div class="hover-line-fill"></div>
-                            </div>
-                        </a>
-                    </div>
-                    <div id="w-node-ae65f1f4-3160-c660-cf7f-c1c6fb7f14de-87a3772a" class="social-icon-wrapper">
-                        <a href="https://www.instagram.com/tycreated/" target="_blank" class="social-icon w-inline-block">
-                            <img src="https://cdn.prod.website-files.com/611030f94f960b2e229ea3b0/61168f66c965b07277602581_instagram-logo.svg" loading="lazy" alt="" class="social-icon-image"/>
-                        </a>
-                        <a href="https://twitter.com/Tycreated" target="_blank" class="social-icon w-inline-block">
-                            <img src="https://cdn.prod.website-files.com/611030f94f960b2e229ea3b0/61168f7c7b50eaa404267a8a_twitter%20(2).svg" loading="lazy" alt="" class="social-icon-image"/>
-                        </a>
-                        <a href="https://twitter.com/Tycreated" target="_blank" class="social-icon w-inline-block">
-                            <img src="https://cdn.prod.website-files.com/611030f94f960b2e229ea3b0/6116905253df13d41782fe6f_facebook-f%20(1).svg" loading="lazy" alt="" class="social-icon-image"/>
-                        </a>
-                    </div>
-                </div>
-                <div id="w-node-_48348eaa-4ce0-72f6-5e9a-2f0bebf9a958-87a3772a" class="footer-credit-wrapper">
-                    <div>
-                        © 2020 
-                        <a href="https://webflow.com/tycreated" target="_blank" class="legal-link">Empathy template</a>
-                        <a href="https://rythm-path-five.webflow.io/#">
-                            <br/>
-                        </a>
-                    </div>
-                    <div id="w-node-_431a92ba-7d9c-8dd5-6286-89ed3a99580f-87a3772a" class="legal-credits">
-                        <a href="#" class="legal-link w-inline-block">
-                            <div>Terms &amp; Conditions</div>
-                        </a>
-                        <a href="#" class="legal-link w-inline-block">
-                            <div>Privacy policy</div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="grain-wrapper">
-            <div class="grain in-element"></div>
-        </div>
-    </div>
-    <div class="delete-me">
-        <div data-w-id="e733a08a-9b1c-f1e6-a573-3865393cbff2" class="hide-wrapper">
-            <div class="delete-me_text-wrapper">
-                <div class="delete-me_text-title">Want to learn how to build websites like this?</div>
-                <div class="delete-me_text-description">Learn from award winning designers in live online classes. Each class is limited to 15 students. Save you&#x27;re spot below!</div>
-            </div>
-            <a href="https://airtable.com/shrXBEVFD7vzw7zun" target="_blank" class="delete-me_link w-inline-block">
-                <div>Save my spot</div>
-            </a>
-        </div>
-    </div>
-    <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=611030f94f960b2e229ea3b0" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <script src="https://assets.website-files.com/611030f94f960b2e229ea3b0/js/webflow.9a0aadc11.js" type="module"></script>
-    <style>
-    #out {
-        color: rgba(255, 255, 255, 0);
-        -webkit-text-stroke-width: 2px;
-        -webkit-text-stroke-color: white;
-    }/* Small devices (portrait tablets and large phones, 600px and up) */
-    @media only screen and (max-width: 600px) {
-        #out {
-            color: rgba(255, 255, 255, 0);
-            -webkit-text-stroke-width: 1px;
-            -webkit-text-stroke-color: white;
-        }
-    }
 
-    #outsmall {
-        color: rgba(255, 255, 255, 0);
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: white;
-    }
-    </style>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Reminder Counselling</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <style>
-    .w-slider-nav.w-round > div {
-        height: 12px;
-        width: 36px;
-        -webkit-box-pack: justify;
-        -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-        justify-content: space-between;
-        -webkit-box-align: end;
-        -webkit-align-items: flex-end;
-        -ms-flex-align: end;
-        align-items: flex-end;
-        -webkit-box-flex: 1;
-        -webkit-flex: 1;
-        -ms-flex: 1;
-        flex: 1;
-        -webkit-transition: all 600ms cubic-bezier(.25, .46, .45, .94);
-        transition: all 600ms cubic-bezier(.25, .46, .45, .94);
-    }
-    </style>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Empathy. Healing. Growth.</h2>
+            <p>Your mental well-being is our priority. Start your journey with us today.</p>
+            <a href="#contact" class="cta-button">Schedule a Consultation</a>
+        </div>
+    </section>
 
-    <style>
-    .w-slider-dot {
-        background: none;
-        border: 2px solid rgba(255, 255, 255, 0.1);
-        border-radius: 100%;
-        -webkit-transition: all 600ms cubic-bezier(.25, .46, .45, .94);
-        transition: all 600ms cubic-bezier(.25, .46, .45, .94);
-    }
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>At Reminder Counselling, we provide compassionate, evidence-based therapy to help individuals, couples, and families navigate life's challenges. We offer a warm, non-judgmental space for self-discovery and healing.</p>
+        </div>
+    </section>
 
-    .w-slider-dot.w-active {
-        background: none;
-        border: 2px solid white;
-        -webkit-transition: all 600ms cubic-bezier(.25, .46, .45, .94);
-        transition: all 600ms cubic-bezier(.25, .46, .45, .94);
-    }
-    </style>
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-item">
+                <h3>Individual Therapy</h3>
+                <p>Tailored support to help you achieve emotional balance and personal growth.</p>
+            </div>
+            <div class="service-item">
+                <h3>Couples Therapy</h3>
+                <p>Helping couples navigate challenges and build stronger, healthier relationships.</p>
+            </div>
+            <div class="service-item">
+                <h3>Family Therapy</h3>
+                <p>Guiding families through conflict resolution and fostering better communication.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section (with Slider) -->
+    <section id="testimonials">
+        <div class="container">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial-slide">
+                    <p>"Reminder Counselling helped me understand my feelings and gave me the tools I needed to heal. I feel more confident and at peace with myself." — Jane D.</p>
+                </div>
+                <div class="testimonial-slide">
+                    <p>"The sessions were eye-opening and transformative. My partner and I are now communicating more openly and have a stronger bond than ever." — Mike & Sarah T.</p>
+                </div>
+                <div class="testimonial-slide">
+                    <p>"Our family therapy sessions truly brought us closer. We understand each other better now and can resolve conflicts with more compassion." — The Williams Family</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team">
+        <div class="container">
+            <h2>Meet Our Team</h2>
+            <div class="team-cards">
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <img src="https://via.placeholder.com/150" alt="Team Member 1">
+                    </div>
+                    <h3>Dr. Sarah L.</h3>
+                    <p>Clinical Psychologist</p>
+                    <p>Specializing in individual therapy and mental wellness. Passionate about helping people find inner peace.</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <img src="https://via.placeholder.com/150" alt="Team Member 2">
+                    </div>
+                    <h3>John M.</h3>
+                    <p>Therapist</p>
+                    <p>Experienced in couples therapy and conflict resolution. Striving to strengthen relationships and communication.</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <img src="https://via.placeholder.com/150" alt="Team Member 3">
+                    </div>
+                    <h3>Amy R.</h3>
+                    <p>Family Counselor</p>
+                    <p>Focused on creating harmonious family environments through effective communication and guidance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+   <!-- Footer Section -->
+<footer>
+    <div class="container">
+        <div class="social-links">
+            <a href="https://www.instagram.com/reminder_counselling" target="_blank">Instagram</a>
+            <a href="#" target="_blank">LinkedIn</a>
+            <a href="#" target="_blank">Facebook</a>
+        </div>
+        <p>&copy; 2025 Reminder Counselling. All rights reserved.</p>
+        <p class="signature">Developed by <strong>Arshad Rahman</strong></p>
+    </div>
+</footer>
+
 </body>
+
 </html>
