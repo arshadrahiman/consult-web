@@ -1,148 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Reminder Counselling</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="script.js"></script>
+    <!-- Slick Carousel CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
 </head>
-
 <body>
+
     <!-- Header Section -->
     <header>
-        <nav>
+        <div class="container">
             <div class="logo">
                 <h1>Reminder Counselling</h1>
             </div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#team">Team</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+            <nav>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h2>Empathy. Healing. Growth.</h2>
-            <p>Your mental well-being is our priority. Start your journey with us today.</p>
-            <a href="#contact" class="cta-button">Schedule a Consultation</a>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>At Reminder Counselling, we provide compassionate, evidence-based therapy to help individuals, couples, and families navigate life's challenges. We offer a warm, non-judgmental space for self-discovery and healing.</p>
-        </div>
+    <section class="hero">
+        <h2>Your Mental Health Matters</h2>
+        <p>We offer professional counselling services tailored to your needs.</p>
+        <a href="#contact" class="cta-button">Get Started</a>
     </section>
 
     <!-- Services Section -->
     <section id="services">
-        <div class="container">
-            <h2>Our Services</h2>
-            <div class="service-item">
-                <h3>Individual Therapy</h3>
-                <p>Tailored support to help you achieve emotional balance and personal growth.</p>
-            </div>
-            <div class="service-item">
-                <h3>Couples Therapy</h3>
-                <p>Helping couples navigate challenges and build stronger, healthier relationships.</p>
-            </div>
-            <div class="service-item">
-                <h3>Family Therapy</h3>
-                <p>Guiding families through conflict resolution and fostering better communication.</p>
-            </div>
+        <h2>Our Services</h2>
+        <div class="service-item">
+            <h3>Individual Therapy</h3>
+            <p>Private therapy sessions tailored to your mental health needs.</p>
+        </div>
+        <div class="service-item">
+            <h3>Couples Therapy</h3>
+            <p>Helping couples resolve conflicts and build healthier relationships.</p>
+        </div>
+        <div class="service-item">
+            <h3>Group Therapy</h3>
+            <p>Interactive group sessions for shared learning and support.</p>
         </div>
     </section>
 
-    <!-- Testimonials Section (with Slider) -->
-    <section id="testimonials">
-        <div class="container">
-            <h2>What Our Clients Say</h2>
-            <div class="testimonial-slider">
-                <div class="testimonial-slide">
-                    <p>"Reminder Counselling helped me understand my feelings and gave me the tools I needed to heal. I feel more confident and at peace with myself." — Jane D.</p>
-                </div>
-                <div class="testimonial-slide">
-                    <p>"The sessions were eye-opening and transformative. My partner and I are now communicating more openly and have a stronger bond than ever." — Mike & Sarah T.</p>
-                </div>
-                <div class="testimonial-slide">
-                    <p>"Our family therapy sessions truly brought us closer. We understand each other better now and can resolve conflicts with more compassion." — The Williams Family</p>
-                </div>
-            </div>
+<!-- Testimonials Section with Carousel -->
+<section id="testimonials">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonial-slider">
+        <div class="testimonial-slide">
+            <p>"The counselling I received here was life-changing. Highly recommended!"</p>
+            <p><strong>- Sarah J.</strong></p>
         </div>
-    </section>
+        <div class="testimonial-slide">
+            <p>"A truly supportive environment that helped me through tough times."</p>
+            <p><strong>- James R.</strong></p>
+        </div>
+        <div class="testimonial-slide">
+            <p>"Professional, understanding, and compassionate therapists."</p>
+            <p><strong>- Emily K.</strong></p>
+        </div>
+        <div class="testimonial-slide">
+            <p>"I felt heard and understood. The team is so patient and empathetic."</p>
+            <p><strong>- Michael W.</strong></p>
+        </div>
+    </div>
+</section>
+
 
     <!-- Team Section -->
     <section id="team">
-        <div class="container">
-            <h2>Meet Our Team</h2>
-            <div class="team-cards">
-                <div class="team-card">
-                    <div class="team-avatar">
-                        <img src="https://via.placeholder.com/150" alt="Team Member 1">
-                    </div>
-                    <h3>Dr. Sarah L.</h3>
-                    <p>Clinical Psychologist</p>
-                    <p>Specializing in individual therapy and mental wellness. Passionate about helping people find inner peace.</p>
+        <h2>Meet Our Team</h2>
+        <div class="team-cards">
+            <div class="team-card">
+                <div class="team-avatar">
+                    <img src="team1.jpg" alt="Team Member">
                 </div>
-                <div class="team-card">
-                    <div class="team-avatar">
-                        <img src="https://via.placeholder.com/150" alt="Team Member 2">
-                    </div>
-                    <h3>John M.</h3>
-                    <p>Therapist</p>
-                    <p>Experienced in couples therapy and conflict resolution. Striving to strengthen relationships and communication.</p>
+                <h3>John Doe</h3>
+                <p>Clinical Psychologist</p>
+            </div>
+            <div class="team-card">
+                <div class="team-avatar">
+                    <img src="team2.jpg" alt="Team Member">
                 </div>
-                <div class="team-card">
-                    <div class="team-avatar">
-                        <img src="https://via.placeholder.com/150" alt="Team Member 3">
-                    </div>
-                    <h3>Amy R.</h3>
-                    <p>Family Counselor</p>
-                    <p>Focused on creating harmonious family environments through effective communication and guidance.</p>
+                <h3>Jane Smith</h3>
+                <p>Therapist</p>
+            </div>
+            <div class="team-card">
+                <div class="team-avatar">
+                    <img src="team3.jpg" alt="Team Member">
                 </div>
+                <h3>Michael Lee</h3>
+                <p>Counsellor</p>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <form id="contact-form">
-                <input type="text" id="name" placeholder="Your Name" required>
-                <input type="email" id="email" placeholder="Your Email" required>
-                <textarea id="message" placeholder="Your Message" required></textarea>
-                <button type="submit" class="cta-button">Send Message</button>
-            </form>
-        </div>
+        <h2>Contact Us</h2>
+        <form action="#">
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
     </section>
 
     <!-- Footer Section -->
-   <!-- Footer Section -->
-<footer>
-    <div class="container">
-        <div class="social-links">
-            <a href="https://www.instagram.com/reminder_counselling" target="_blank">Instagram</a>
-            <a href="#" target="_blank">LinkedIn</a>
-            <a href="#" target="_blank">Facebook</a>
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="#">Instagram</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Facebook</a>
+            </div>
+            <p>&copy; 2025 Reminder Counselling. All rights reserved.</p>
+            <p class="signature">Developed by <strong>Arshad Rahman</strong></p>
         </div>
-        <p>&copy; 2025 Reminder Counselling. All rights reserved.</p>
-        <p class="signature">Developed by <strong>Arshad Rahman</strong></p>
-    </div>
-</footer>
+    </footer>
+
+<!-- JavaScript -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="script.js"></script>
 
 </body>
-
 </html>
